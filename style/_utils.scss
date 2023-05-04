@@ -1,0 +1,18 @@
+@mixin dFlex($justifyContent, $alignItems, $flexDirection) {
+    display: flex;
+    @if $justifyContent != "" {
+      justify-content: $justifyContent;
+    }
+    @if $alignItems != "" {
+      align-items: $alignItems;
+    }
+    @if $flexDirection != "" {
+      flex-direction: $flexDirection;
+    }
+  }
+  
+  @mixin widthHeight($width, $height){
+      width: $width;
+      height: $height;
+  }
+  

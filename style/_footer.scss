@@ -1,0 +1,21 @@
+@import "utils";
+body{
+    footer {
+        @include widthHeight(100%, 100px);
+        @include dFlex(space-between, "", row);
+        margin-top: auto;
+        box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+        .copy {
+            align-self: flex-end;
+            small {
+                @include dFlex(end, "", "");
+                padding-right: 20px;
+            }
+        }
+        .contacto {
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+}

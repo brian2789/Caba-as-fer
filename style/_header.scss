@@ -1,0 +1,48 @@
+@import "utils";
+body {
+    header {
+        @include widthHeight(100%, 100px);
+        background-color:lightsalmon;
+        @include dFlex(space-between, center, "");
+        box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+        .navegacion {
+            text-align: center;
+            text-decoration: none;
+            nav {
+                padding-top: 19px;
+                width: 100%;
+                @include dFlex(end, center, "");
+                margin: auto;
+                .menu_items {
+                    display: flex;
+                    list-style-type: none;
+                    margin-right: 30px;
+                }
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                }
+                .show {
+                    top: 100px !important;
+                }
+                .btn_menu {
+                    margin-right: 30px;
+                    font-size: 25px;
+                    color: aliceblue;
+                    cursor: pointer;
+                    display: none;
+                    color: #aaa;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .nav-mobile {
+            display: none;
+            padding-right: 50px;
+            i {
+                font-size: 3rem;
+                color:#aaa;
+            }
+        }
+    }
+}
